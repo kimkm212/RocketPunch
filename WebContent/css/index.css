@@ -1,0 +1,1018 @@
+/*div, section, article, header, footer{
+  border: 1px solid black;
+}*/
+
+
+/*전역 css*/
+/*분야 아이콘들~~~~~~~*/
+
+/*
+.container{
+  width: 980px !important;
+}
+*/
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+button{
+  border-radius: 0px !important;
+}
+
+.field{
+  border: 1px solid #ddd;
+  padding: 2px;
+  margin: 5px;
+  display: inline-block;
+}
+
+/*개발자 아이콘*/
+.fa-cogs{
+  color: white;
+  background: #19B119;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+/*디자이너 아이콘*/
+.fa-picture-o{
+  color: white;
+  background: #e73c3c;
+  padding: 3px;
+  margin-right: 3px;
+}
+
+/*기획자 아이콘*/
+.fa-building-o{
+  color: white;
+  background: #3c6ce7;
+  padding: 3px;
+  margin-right: 3px;
+}
+/*영업맨 아이콘*/
+.fa-briefcase{
+  color: white;
+  background: #c9e425;
+  padding: 3px;
+  margin-right: 3px;
+}
+/*분야 아이콘들~~~~~~끝*/
+
+
+body{
+  background: #F4FDF8;
+}
+
+h1{
+  font-size: 20px;
+}
+.nowrap{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul{
+  list-style:none;
+}
+
+.wrap100{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.area_wrap{
+  margin-top:100px;
+  margin-bottom: 100px;
+}
+
+.main_pannel{
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+
+.pannel_wrap{
+  background: white;
+  box-shadow: 2px 2px #ddd;
+}
+
+.pagi{
+  text-align: center;
+}
+
+/*헤더 css*/
+header{
+  background:#074E67;
+}
+
+header .rocketImg{
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 30px;
+  float: left;
+}
+
+header nav{
+  background:#074E67;
+}
+
+header nav a{
+  color : white;
+  font-size: 15px;
+}
+
+header .navbar{
+  margin-bottom: 0px;
+}
+
+header .navbar-toggle{
+  margin-top: 0px !important;
+  margin-right: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+header .search{
+  padding-top: 12px;
+}
+
+header .search > input{
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+header #my_pro{
+  width:150px;
+}
+
+header #my_pro > .dropdown-toggle{
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+  height:50px;
+}
+
+header #my_pro img{
+  width: 30px;
+  border-radius: 100px;
+  margin-right:10px;
+  float:left;
+}
+
+header #my_pro p{
+  margin-top:5px;
+  float:left;
+}
+
+/*회원가입 모달*/
+#singup_modal .form-inline > input:nth-child(1){
+  width: 43%;
+  display: inline-block;
+}
+
+#singup_modal .form-inline > input:nth-child(2){
+  width: 55%;
+  display: inline-block;
+}
+
+/*로그인 모달*/
+#login_modal .modal-content{
+  border-radius: 0px;
+}
+
+#login_modal .modal-body{
+  background: #ddd;
+}
+
+/* 푸터 영역 */
+footer{
+  text-align: center;
+  border-top: 1px solid #ddd;
+}
+
+footer .col-md-12 li{
+  float: left;
+  padding: 20px;
+}
+
+footer .sns_lists{
+  padding-bottom: 10px;
+}
+
+footer .sns_lists i{
+  margin-right: 20px;
+}
+
+
+/*-------------------------------index.jsp부분------------------------------*/
+/*메인 와이드 이미지*/
+#main_wideImg{
+  background-image: url("../imgs/index_header.jpg");
+  margin-top:0px;
+}
+#main_wideImg .textArea{
+  padding-top: 150px;
+  text-align: center;
+  height: 370px;
+  color: white;
+}
+
+/*메인 배너*/
+#main_banner img{
+  width: 100%;
+  opacity: 1;
+}
+
+/* 메인 채용정보 */
+#main_recruit .entImg{
+  width: 78px;
+  height: 78px;
+  float: left;
+  margin-right:5%;
+}
+
+#main_recruit .pannel_wrap{
+  padding:5px 15px 5px 15px;
+}
+
+#main_recruit .pannel_wrap .row{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#main_recruit .pannel_wrap span{
+  float: right;
+  font-size: 12px;
+  padding-top: 9px;
+}
+
+#main_recruit .comp_info{
+  text-align: left;
+}
+
+/* 메인 기업정보 */
+#main_company .compHead{
+  height:80px;
+  width: 100%;
+  position: relative;
+}
+
+#main_company .compHead > div{
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 10px;
+  bottom:10px;
+}
+
+#main_company .comp_info{
+  padding: 0px 10px 10px 10px;
+}
+
+/*메인 프로플영역*/
+#main_profile .pro_img{
+  float: right;
+  width: 138px;
+  height: 138px;
+}
+
+#main_profile .pannel_wrap{
+  padding-right: 0px;
+}
+
+#main_profile .pannel_wrap .prof_info{
+  float: left;
+}
+
+/*--------------------------맴버 페이지-------------------------------*/
+#company{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#comp_list .comp_sort{
+  text-align: right;
+}
+
+#comp_list .comp_sort span{
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+#comp_list .comp_wrap{
+  background: white;
+  padding-left: 0px;
+  height: 115px;
+  border: 0.8px solid #ddd;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#comp_list .comp_cover{
+  height: 115px;
+  width: 40%;
+  float: left;
+}
+@media all and (max-width:768px) {
+  #comp_list .comp_cover{
+  display: none;
+  }
+}
+#comp_list .comp_img{
+  width: 55px;
+  height: 55px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right:5%;
+  border: 0.5px solid #ddd;
+}
+
+#comp_list h4{
+  margin-top: 14px;
+  display: inline-block;
+}
+
+#comp_list .rec_{
+  margin-top: 8px;
+  float: right;
+  font-size: 16px;
+}
+
+#comp_list .comp_wrap span{
+  float: left;
+  margin-top: 7px;
+  margin-left: 10px;
+}
+
+/*옆구리*/
+#comp_aside{
+  padding: 50px 20px 20px 20px;
+}
+#comp_aside div{
+  margin-bottom: 50px;
+}
+
+#comp_aside .comp_banner img{
+    width: 100%;
+}
+
+#comp_aside .comp_regi_area{
+  padding: 20px;
+  background-color: #ddd;
+}
+
+#comp_aside .memb_regi_area{
+  padding: 20px;
+  background-color: #ddd;
+}
+
+/*--------------------------멤버 페이지--------------*/
+/*맴버태그*/
+#memb_tags{
+  width: 100%;
+  background: white;
+}
+
+#memb_tags .tags_div{
+  width: 100%;
+  padding-bottom: 10px;
+  float: left;
+}
+
+#memb_tags .tags_div span{
+  float: left;
+  margin-top: 18px;
+  margin-right: 10px;
+}
+
+#memb_tags .tags_div h3{
+  float: left;
+  width: 100px;
+  font-size: 15px;
+}
+
+/*맴버프로필*/
+#memb_profile .pro_img{
+  float: right;
+  width: 138px;
+  height: 138px;
+}
+
+#memb_profile .pannel_wrap{
+  padding-right: 0px;
+}
+
+#memb_profile .pannel_wrap .prof_info{
+  float: left;
+}
+
+#memb_profile .btn_friends{
+  float: right;
+}
+
+/*-------------------------------채용 페이지---------------------*/
+
+#rec_list .rec_sort{
+  text-align: right;
+}
+
+#rec_list .rec_sort span{
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+#rec_list .rec_wrap{
+  background: white;
+  border: 0.8px solid #ddd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#rec_list div{
+  margin-bottom:10px;
+}
+
+#rec_list .rec_img{
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 2%;
+  border: 0.5px solid #ddd;
+}
+
+#rec_list .rec_wrap .info{
+  width: 100%;
+}
+
+#rec_list .rec_wrap .info > h4{
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: initial;
+}
+
+#rec_list .rec_wrap > span{
+  float: right;
+  margin-top:4px;
+  font-size: 13px;
+}
+
+#rec_list .rec_wrap .info h4 span{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#rec_list .field_lists > span:first-child{
+  margin-left: 0px;
+}
+
+#rec_aside{
+  padding: 50px 20px 20px 20px;
+}
+#rec_aside div{
+  margin-bottom: 50px;
+}
+
+#rec_aside .comp_banner img{
+  width: 100%;
+}
+
+/*------------------------------회원정보----------------*/
+
+#m_info_head{
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+#m_info_head .cover{
+  width: 100%;
+  height: 250px;
+}
+
+#m_info_head .cover > .container{
+  position: relative;
+  height: 250px;
+}
+
+#m_info_head .pro_img{
+  position: absolute;
+  bottom: -60px;
+  left: 60px;
+  width: 175px;
+  height: 175px;
+  border-radius: 100px;
+  border: 3px solid white;
+}
+
+#m_info_head .name_tag{
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 260px;
+}
+
+#m_info_head .btn_area{
+  text-align: center;
+  padding-top: 90px;
+}
+
+#m_info_head .in_name_tag{
+  display: none;
+  text-align: center;
+  margin-top:10px;
+  margin-bottom: 25px;
+}
+
+#m_info_head .in_name_tag  > h2{
+  font-weight: bolder;
+  color: #5d5d5d;
+}
+
+/*사진과 이름 위치 미디어 쿼리*/
+@media all and (max-width:990px) {
+  #m_info_head .pro_img{
+    margin-top: 50px;
+    margin: 30px auto;
+    position: static;
+  }
+
+  #m_info_head .name_tag{
+    display: none;
+  }
+
+  #m_info_head .in_name_tag{
+    display: block;
+  }
+
+  #m_info_head .btn_area{
+    padding-top: 30px;
+  }
+}
+/*******미디어쿼리 종료********/
+
+#m_info_head .head_info > .row{
+  margin-top:10px;
+}
+
+#m_info_head .head_info > .row:nth-child(2) p{
+  margin: 10px;
+}
+
+#m_info_head .head_info > .row:nth-child(3){
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+#m_info_head .row:nth-child(3) .field{
+  padding: 2px;
+  margin: 5px;
+  border: 0px;
+  float: left;
+}
+
+#m_info_head .row:nth-child(3) .field > i{
+  color: #ddd;
+  background: none;
+}
+
+#m_info_head .row:nth-child(4) {
+  margin-bottom: 6px;
+}
+
+#m_info_head .row:nth-child(4) p{
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#m_info_head .row:nth-child(4) p > span{
+  margin:10px
+}
+
+#m_info_head .row:nth-child(4) .btns{
+  float: right;
+}
+
+#m_info_body > article{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#m_info_body .add_pro .pro_pannel{
+  background: #5DDAEF;
+  height: 70px;
+  text-align: center;
+  margin: 5px 0px 0px 0px;
+  padding: 13px 5px 5px 5px;
+}
+
+#m_info_body .add_pro .pro_pannel p{
+  color: white;
+}
+
+#m_info_body .add_pro .pro_pannel > p:first-child{
+  border-bottom: 0.5px solid #ECECEC;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+
+#m_info_body .add_pro .pro_pannel > p:nth-child(2){
+  padding-top: 1px;
+}
+
+#m_info_body h3{
+  font-size: 15px;
+  display: inline-block;
+}
+
+#m_info_body .add_btn{
+  float: right;
+  margin: 12px;
+}
+
+#m_info_body .info_pannel{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 20px;
+  background: white;
+  box-shadow: 5px 5px #ddd;
+}
+
+#m_info_body .info_pannel .ud{
+  float: right;
+}
+
+
+#m_info_body .info_pannel img{
+  width: 70px;
+  float: left;
+  border: 1px solid #ddd;
+  margin-right: 15px;
+}
+
+#m_info_body .info > h4{
+  margin-top: 5px;
+  display: inline-block;
+}
+
+/*---------------------------기업 상세 정보----------*/
+#c_info_head{
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+#c_info_head > .cover{
+  width: 100%;
+  height: 360px;
+}
+
+#c_info_head .comp_pannel{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+#c_info_head .comp_pannel > .logo{
+  float: left;
+  margin-right: 30px;
+  width: 120px;
+  height: 120px;
+  border: 0.5px solid #ddd;
+}
+
+#c_info_head .comp_pannel .comp_info h3{
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+#c_info_head .comp_pannel .comp_info h3 > span{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#c_info_head .comp_pannel .comp_info p{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#c_info_head .comp_info2{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+#c_info_head .comp_info2 > div{
+  float: left;
+  margin-left: 100px;
+  text-align: center;
+}
+
+#c_info_head .comp_info2 > div:first-child{
+  margin-left: 0px;
+}
+
+#c_info_head .btn_area{
+  text-align: center;
+  position: relative;
+  height: 250px;
+}
+
+#c_info_head .btn_area > .in {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+#c_info_head .btn_area > .in > button{
+  margin-top: 50px;
+}
+
+#c_info_head .com_btns{
+  margin-top: 50px;
+}
+
+/*몸체 부분*/
+#c_info_body article{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+#c_info_body .comp_pannel{
+  width: 100%;
+  height: 300px;
+  background: white;
+  border:0.5px solid #ddd;
+  padding: 30px 25px 30px 25px;
+}
+
+#c_info_body .comp_member_wrap{
+  background: white;
+  height: 140px;
+  padding-left: 10px;
+  border:0.5px solid #ddd;
+  margin-bottom: 30px;
+}
+
+#c_info_body .comp_member_wrap img{
+  float: right;
+  height: 100%;
+}
+
+#c_info_body .comp_member_wrap .prof_info{
+  float: left;
+}
+
+#c_info_body .job_li .rec_wrap{
+  background: white;
+  border: 0.8px solid #ddd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+#c_info_body .job_li .rec_img{
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 2%;
+  border: 0.5px solid #ddd;
+}
+
+#c_info_body .job_li .rec_wrap .info{
+  width: 100%;
+}
+
+#c_info_body .job_li .rec_wrap .info > h4{
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: initial;
+}
+
+#c_info_body .job_li .rec_wrap > span{
+  float: right;
+  margin-top:4px;
+  font-size: 13px;
+}
+
+#c_info_body .job_li .rec_wrap .info h4 span{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/*맴버프로필*/
+#c_info_body .pro_img{
+  float: right;
+  width: 138px;
+  height: 138px;
+}
+
+#c_info_body .pannel_wrap{
+  padding-right: 0px;
+}
+
+#c_info_body .pannel_wrap .prof_info{
+  float: left;
+}
+
+#c_info_body .btn_friends{
+  float: right;
+}
+
+#c_info_aside .banner > img{
+  width: 100%;
+}
+
+#c_info_aside .comp_aside_info{
+  width: 100%;
+  height: auto;
+  background: #ddd;
+}
+
+#c_info_aside .comp_history{
+  width: 100%;
+  height: auto;
+  background: #ddd;
+}
+
+/*회사 채용 정보 페이지*/
+#job_li_head{
+  width: 100%;
+  height: auto;
+  background: white;
+}
+
+#job_li_head > .cover{
+  width: 100%;
+  height: 360px;
+}
+
+#job_li_head .comp_pannel{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+#job_li_head .comp_pannel > .com_img{
+  float: left;
+  margin-right: 30px;
+  width: 120px;
+  height: 120px;
+  border: 0.5px solid #ddd;
+}
+
+#job_li_head .comp_pannel .comp_info h3{
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+#job_li_head .comp_pannel .comp_info h3 > span{
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+#job_li_head .comp_pannel .comp_info p{
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#job_li_head .comp_info2{
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: auto;
+  overflow: hidden;
+}
+
+#job_li_head .comp_info2 > div{
+  float: left;
+  margin-left: 100px;
+  text-align: center;
+}
+
+#job_li_head .comp_info2 > div:first-child{
+  margin-left: 0px;
+}
+
+#job_li_head .btn_area{
+  text-align: center;
+}
+
+#job_bwrap{
+  margin-top: 50px;
+}
+
+#job_li_body > article{
+  margin-bottom: 50px;
+}
+
+
+#job_li_body .comp_member_wrap{
+  background: white;
+  height: 140px;
+  padding-left: 10px;
+  border:0.5px solid #ddd;
+}
+
+#job_li_body .comp_member_wrap > .mem_img{
+  float: right;
+  height: 120px;
+  width: 120px;
+}
+
+#job_li_body .comp_member_wrap .prof_info{
+  float: left;
+}
+
+#job_bwrap .comp_pannel{
+  width: 100%;
+  height: auto;
+  background: white;
+  border:0.5px solid #ddd;
+  padding: 30px 25px 30px 25px;
+}
+
+#job_li_aside .aside_pannel {
+  background: white;
+}
+
+/*채용 관리 부분  company_admin.jsp*/
+
+#comp_admin .admin_wrap{
+  background: #c1d1a6;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+#comp_admin .rec_wrap{
+  background: white;
+  border: 0.8px solid #ddd;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 1px;
+  padding: 10px;
+}
+
+#comp_admin .rec_img{
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 2%;
+  border: 0.5px solid #ddd;
+}
+
+#comp_admin .rec_wrap .info{
+  width: 100%;
+}
+
+#comp_admin .rec_wrap .info > h4{
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: initial;
+}
+
+#comp_admin .rec_wrap > span{
+  float: right;
+  margin-top:4px;
+  font-size: 13px;
+}
+
+#comp_admin .rec_wrap .info h4 span{
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+#comp_admin .comp_member_wrap{
+  background: white;
+  height: auto;
+  overflow: hidden;
+  padding-left: 10px;
+  border:0.5px solid #ddd;
+}
+
+#comp_admin .comp_member_wrap > .mem_img{
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+
+#comp_admin .comp_member_wrap .prof_info{
+  float: left;
+}
+
+#comp_admin .recruiters{
+  margin-top: 25px;
+}
+
+#comp_admin .recruiters > h4{
+  margin-left: 15px;
+}
