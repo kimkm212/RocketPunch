@@ -92,7 +92,7 @@
             <div class="col-sm-6">
               <div class="comp_member_wrap">
                 <div class="prof_info">
-                  <h4><strong><a href="/MemberInfoAction?id=<%=mb.getId()%>"><%=mb.getFirstNameK()+mb.getLastNameK()%></a></strong></h4>
+                  <h4><strong><a href="/MemberInfoAction.me?id=<%=mb.getId()%>"><%=mb.getFirstNameK()+mb.getLastNameK()%></a></strong></h4>
                   <p><%=mb.getCRole()%></p>
                   <p><%=cb.getCNamek()%></p>
                 </div>
